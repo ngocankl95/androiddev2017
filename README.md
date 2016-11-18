@@ -23,4 +23,4 @@ Project description
 
 *Add your project description here*
 
-topic: Image application
+topic: Image application (Flickr)
