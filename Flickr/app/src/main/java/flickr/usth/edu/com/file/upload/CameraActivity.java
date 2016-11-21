@@ -5,7 +5,6 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Color;
@@ -23,10 +22,10 @@ import android.widget.Toast;
 import flickr.usth.edu.com.R;
 
 
-public class MainUploadActivity extends AppCompatActivity {
+public class CameraActivity extends AppCompatActivity {
 
     // LogCat tag
-    private static final String TAG = MainUploadActivity.class.getSimpleName();
+    private static final String TAG = CameraActivity.class.getSimpleName();
 
     // Camera activity request codes
     private static final int CAMERA_CAPTURE_IMAGE_REQUEST_CODE = 100;
@@ -205,7 +204,7 @@ public class MainUploadActivity extends AppCompatActivity {
     }
 
     private void launchUploadActivity(boolean isImage){
-        Intent i = new Intent(MainUploadActivity.this, UploadActivity.class);
+        Intent i = new Intent(CameraActivity.this, UploadActivity.class);
         i.putExtra("filePath", fileUri.getPath());
         i.putExtra("isImage", isImage);
         startActivity(i);
