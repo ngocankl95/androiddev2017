@@ -74,6 +74,28 @@ public class CameraActivity extends AppCompatActivity {
             }
         });
 
+        // Checking camera availability
+        if (!isDeviceSupportCamera()) {
+            Toast.makeText(getApplicationContext(),
+                    "Sorry! Your device doesn't support camera",
+                    Toast.LENGTH_LONG).show();
+            // will close the app if the device does't have camera
+            finish();
+        }
+    }
+
+    /**
+     * Checking device has camera hardware or not
+     * */
+    private boolean isDeviceSupportCamera() {
+        if (getApplicationContext().getPackageManager().hasSystemFeature(
+                PackageManager.FEATURE_CAMERA)) {
+            // this device has a camera
+            return true;
+        } else {
+            // no camera on this device
+            return false;
+        }
     }
 
     /**
@@ -181,6 +203,12 @@ public class CameraActivity extends AppCompatActivity {
         }
     }
 
+    private void launchUploadActivity(boolean isImage){
+        Intent i = new Intent(CameraActivity.this, UploadActivity.class);
+        i.putExtra("filePath", fileUri.getPath());
+        i.putExtra("isImage", isImage);
+        startActivity(i);
+    }
 
     /**
      * ------------ Helper Methods ----------------------
