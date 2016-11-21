@@ -202,7 +202,6 @@ public class UploadActivity extends AppCompatActivity {
             }
 
             return responseString;
-
         }
 
         @Override
