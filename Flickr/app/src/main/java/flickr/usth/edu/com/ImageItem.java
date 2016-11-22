@@ -2,12 +2,7 @@ package flickr.usth.edu.com;
 
 import android.graphics.Bitmap;
 
-/**
- * Created by ngoca on 18/11/2016.
- */
-
 public class ImageItem {
-
     private Bitmap image;
     private String title;
 
