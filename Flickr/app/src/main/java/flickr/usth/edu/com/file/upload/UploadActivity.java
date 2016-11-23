@@ -1,7 +1,7 @@
 package flickr.usth.edu.com.file.upload;
 
 import flickr.usth.edu.com.R;
-import info.androidhive.camerafileupload.AndroidMultiPartEntity.ProgressListener;
+import info.flickr.usth.edu.com.file.upload.AndroidMultiPartEntity.ProgressListener;
 
 import java.io.File;
 import java.io.IOException;
@@ -16,7 +16,6 @@ import org.apache.http.entity.mime.content.StringBody;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.util.EntityUtils;
 
-import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -35,10 +34,6 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.VideoView;
-
-import static android.support.v7.appcompat.R.id.info;
-import static android.support.v7.appcompat.R.id.info;
-import static flickr.usth.edu.com.R.id.info;
 
 public class UploadActivity extends AppCompatActivity {
 

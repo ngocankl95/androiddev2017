@@ -12,7 +12,7 @@ import org.apache.http.entity.mime.MultipartEntity;
  * Created by ngoca on 21/11/2016.
  */
 
-public class MultiPartEntity extends MultipartEntity {
+public class AndroidMultiPartEntity extends MultipartEntity {
     private final ProgressListener listener;
 
     public AndroidMultiPartEntity(final ProgressListener listener) {
