@@ -19,14 +19,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity android:name=".DetailsActivity" />
-
         <activity
             android:name=".file.upload.UploadActivity"
             android:screenOrientation="portrait" />
-
         <activity android:name=".file.upload.CameraActivity" />
+        <activity android:name=".Fragment.SingleFragmentActivity"></activity>
     </application>
 
 </manifest>
