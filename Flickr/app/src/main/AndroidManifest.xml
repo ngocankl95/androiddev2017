@@ -24,7 +24,8 @@
             android:name=".file.upload.UploadActivity"
             android:screenOrientation="portrait" />
         <activity android:name=".file.upload.CameraActivity" />
-        <activity android:name=".Fragment.SingleFragmentActivity"></activity>
+        <activity android:name=".Fragment.SingleFragmentActivity" />
+        <activity android:name=".PhotoGalleryActivity"></activity>
     </application>
 
 </manifest>
