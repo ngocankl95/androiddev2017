@@ -19,7 +19,7 @@ import java.util.List;
 
 import flickr.usth.edu.com.GalleryItem;
 import flickr.usth.edu.com.Network.FlickrFetchr;
-import flickr.usth.edu.com.R;
+import flickr.usth.edu.com.Fragment.R;
 import flickr.usth.edu.com.ThumbnailDownloader;
 
 import static android.content.ContentValues.TAG;
@@ -104,9 +104,9 @@ public class PhotoGalleryFragment extends android.support.v4.app.Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View v = inflater.inflate(R.layout.fragment_photo_gallery, container, false);
+        View v = inflater.inflate(R.layout.activity_photo_gallery, container, false);
         mPhotoRecyclerView = (RecyclerView) v
-                .findViewById(R.id.fragment_photo_gallery_recycler_view);
+                .findViewById(R.id.activity_photo_gallery_recycler_view);
         mPhotoRecyclerView.setLayoutManager(new GridLayoutManager(getActivity(), 3));
         setupAdapter();
         return v;
