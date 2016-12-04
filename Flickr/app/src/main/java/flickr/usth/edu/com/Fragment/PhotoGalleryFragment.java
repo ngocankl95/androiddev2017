@@ -30,6 +30,8 @@ import static android.content.ContentValues.TAG;
 
 public class PhotoGalleryFragment extends android.support.v4.app.Fragment {
 
+    private static final String TAG = 'PhotoGalleryFragment';
+
     private RecyclerView mPhotoRecyclerView;
     private  List<GalleryItem> mItems = new ArrayList<>();
     private ThumbnailDownloader<PhotoHolder> mThumbnailDownloader;
@@ -57,7 +59,7 @@ public class PhotoGalleryFragment extends android.support.v4.app.Fragment {
         );
         mThumbnailDownloader.start();
         mThumbnailDownloader.getLooper();
-        Log.i(TAG, "bg thread started");
+        Log.i(TAG, "Background thread started");
     }
 
     private class PhotoHolder extends RecyclerView.ViewHolder{
@@ -69,7 +71,7 @@ public class PhotoGalleryFragment extends android.support.v4.app.Fragment {
                     .findViewById(R.id.fragment_photo_gallery_image_view);
         }
 
-        public  void bindDrawable(Drawable drawable){
+        public void bindDrawable(Drawable drawable){
             mItemImageView.setImageDrawable(drawable);
         }
     }
@@ -128,7 +130,7 @@ public class PhotoGalleryFragment extends android.support.v4.app.Fragment {
     public void onDestroy(){
         super.onDestroy();
         mThumbnailDownloader.quit();
-        Log.i(TAG, "bg thread ended");
+        Log.i(TAG, "Background thread ended");
     }
 
     private class FetchItemTask extends AsyncTask<Void,Void, List<GalleryItem>>{

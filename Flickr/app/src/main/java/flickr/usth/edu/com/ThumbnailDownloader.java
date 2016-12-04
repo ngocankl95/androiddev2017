@@ -14,7 +14,7 @@ import java.util.concurrent.ConcurrentMap;
 import flickr.usth.edu.com.Network.FlickrFetchr;
 
 /**
- * Created by laptop on 12/3/2016.
+ * Created by ngoca on 12/3/2016.
  */
 
 public class ThumbnailDownloader<T> extends HandlerThread {
