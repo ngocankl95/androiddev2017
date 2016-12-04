@@ -17,10 +17,10 @@ import android.widget.ImageView;
 import java.util.ArrayList;
 import java.util.List;
 
-import huy.photogallery.GalleryItem;
-import huy.photogallery.Network.FlickrFetchr;
-import huy.photogallery.R;
-import huy.photogallery.ThumbnailDownloader;
+import flickr.usth.edu.com.GalleryItem;
+import flickr.usth.edu.com.Network.FlickrFetchr;
+import flickr.usth.edu.com.R;
+import flickr.usth.edu.com.ThumbnailDownloader;
 
 import static android.content.ContentValues.TAG;
 
