@@ -93,7 +93,7 @@ public class PhotoGalleryFragment extends android.support.v4.app.Fragment {
         @Override
         public void onBindViewHolder(PhotoHolder photoHolder, int position) {
             GalleryItem galleryItem = mGalleryItems.get(position);
-            Drawable placeholder = getResources().getDrawable(R.drawable.and);
+            Drawable placeholder = getResources().getDrawable(R.drawable.timer);
             photoHolder.bindDrawable(placeholder);
             mThumbnailDownloader.queueThumbnail(photoHolder, galleryItem.getmUrl());
         }
