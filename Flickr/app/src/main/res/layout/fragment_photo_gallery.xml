@@ -5,6 +5,7 @@
     android:id="@+id/fragment_photo_gallery_recycler_view"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="flickr.usth.edu.com.PhotoGalleryActivity">
+    tools:context="huy.photogallery.PhotoGalleryActivity">
 
 </android.support.v7.widget.RecyclerView>
+

@@ -1,14 +1,11 @@
 package flickr.usth.edu.com.Fragment;
-
 import android.os.Bundle;
 import android.support.annotation.LayoutRes;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 
-import flickr.usth.edu.com.R;
-
-
+import huy.photogallery.R;
 
 /**
  * Created by ngoca on 12/1/2016.
@@ -18,7 +15,7 @@ public abstract class SingleFragmentActivity extends AppCompatActivity {
     protected abstract Fragment createFragment();
     @LayoutRes
     protected int getLayoutResId() {
-        return R.layout.activity_single_fragment;
+        return R.layout.activity_fragment;
     }
     @Override
     public void onCreate(Bundle savedInstanceState) {
