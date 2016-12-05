@@ -12,22 +12,9 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
-<<<<<<< HEAD
-        <activity android:name=".PhotoGalleryActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".Fragment.SingleFragmentActivity" />
-
-=======
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
->>>>>>> bea0b26a8b0a1e180788dafa887dd8ccf5cc8084
     </application>
 
 </manifest>
