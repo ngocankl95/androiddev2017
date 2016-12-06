@@ -2,5 +2,8 @@
     <string name="app_name">"mini Flickr gallery "</string>
     <string name="search">"search "</string>
     <string name="clear_search">"main page"</string>
+    <string name="btnTakePicture">Capture Image</string>
+    <string name="btnRecordVideo">Record Video</string>
+    <string name="or">(or)</string>
 
 </resources>

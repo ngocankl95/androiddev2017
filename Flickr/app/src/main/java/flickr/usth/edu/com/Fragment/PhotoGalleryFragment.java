@@ -37,7 +37,7 @@ import static android.content.ContentValues.TAG;
 public class PhotoGalleryFragment extends android.support.v4.app.Fragment {
 
     private static final String TAG = "PhotoGalleryFragment";
-    
+
     private RecyclerView mPhotoRecyclerView;
     private  List<GalleryItem> mItems = new ArrayList<>();
     private ThumbnailDownloader<PhotoHolder> mThumbnailDownloader;
