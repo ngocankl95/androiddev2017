@@ -5,7 +5,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 
-import huy.photogallery.R;
+import flickr.usth.edu.com.R;
 
 /**
  * Created by ngoca on 12/1/2016.

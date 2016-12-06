@@ -78,7 +78,7 @@ public class FlickrFetchr {
         List<GalleryItem> items = new ArrayList<>();
 
         try {
-            /**String url = Uri.parse("https://api.flickr.com/services/rest/")                    .buildUpon()
+            /**String url = Uri.parse("https://api.flickr.com/services/rest/")     .buildUpon()
              .appendQueryParameter("method", "flickr.photos.getRecent")
              .appendQueryParameter("api_key", API_KEY)
              .appendQueryParameter("format", "json")

@@ -25,7 +25,7 @@ import flickr.usth.edu.com.GalleryItem;
 import flickr.usth.edu.com.Network.FlickrFetchr;
 import flickr.usth.edu.com.QueryPreferences;
 import flickr.usth.edu.com.ThumbnailDownloader;
-import huy.photogallery.R;
+import flickr.usth.edu.com.R;
 
 import static android.content.ContentValues.TAG;
 
@@ -35,11 +35,8 @@ import static android.content.ContentValues.TAG;
 
 public class PhotoGalleryFragment extends android.support.v4.app.Fragment {
 
-<<<<<<< HEAD
     private static final String TAG = "PhotoGalleryFragment";
 
-=======
->>>>>>> bea0b26a8b0a1e180788dafa887dd8ccf5cc8084
     private RecyclerView mPhotoRecyclerView;
     private  List<GalleryItem> mItems = new ArrayList<>();
     private ThumbnailDownloader<PhotoHolder> mThumbnailDownloader;
