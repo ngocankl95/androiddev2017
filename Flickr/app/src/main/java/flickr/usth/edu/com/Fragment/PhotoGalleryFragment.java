@@ -58,19 +58,19 @@ public class PhotoGalleryFragment extends android.support.v4.app.Fragment {
         //new FetchItemTask().execute();
         updateItem();
 
-        // Locate the button in activity_main.xml
-        Button button = (Button) getActivity().findViewById(R.id.menu_item_camera);
-
-        // Capture button clicks
-        button.setOnClickListener(new OnClickListener() {
-            public void onClick(View arg0) {
-
-                // Start NewActivity.class
-                Intent myIntent = new Intent(getActivity(),
-                        CameraActivity.class);
-                startActivity(myIntent);
-            }
-        });
+//        // Locate the button in activity_main.xml
+//        Button button = (Button) getActivity().findViewById(R.id.menu_item_camera);
+//
+//        // Capture button clicks
+//        button.setOnClickListener(new OnClickListener() {
+//            public void onClick(View arg0) {
+//
+//                // Start NewActivity.class
+//                Intent myIntent = new Intent(getActivity(),
+//                        CameraActivity.class);
+//                startActivity(myIntent);
+//            }
+//        });
 
         Handler responseHandler = new Handler();
         mThumbnailDownloader = new ThumbnailDownloader<>(responseHandler);
