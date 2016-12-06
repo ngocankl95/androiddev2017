@@ -9,6 +9,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
+<<<<<<< HEAD
         <activity android:name=".PhotoGalleryActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,6 +20,11 @@
 
         <!--<activity android:name=".Fragment.SingleFragmentActivity" />-->
 
+=======
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+>>>>>>> 67e5dc80a976354354e2cf5f12795d07c90c3fee
     </application>
 
 </manifest>
