@@ -22,7 +22,8 @@
 
         <!-- <activity android:name=".Fragment.SingleFragmentActivity" /> -->
 
-        <activity android:name=".CameraActivity"></activity>
+        <activity android:name=".CameraActivity" />
+        <activity android:name=".UploadActivity"></activity>
     </application>
 
 </manifest>
