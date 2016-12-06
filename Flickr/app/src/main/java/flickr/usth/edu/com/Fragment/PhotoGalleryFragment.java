@@ -17,7 +17,9 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
+import android.view.View.OnClickListener;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -26,8 +28,10 @@ import flickr.usth.edu.com.GalleryItem;
 import flickr.usth.edu.com.Network.FlickrFetchr;
 import flickr.usth.edu.com.QueryPreferences;
 import flickr.usth.edu.com.ThumbnailDownloader;
+import flickr.usth.edu.com.CameraActivity;
 import flickr.usth.edu.com.R;
 
+import static android.R.attr.button;
 import static android.content.ContentValues.TAG;
 
 /**
@@ -53,6 +57,20 @@ public class PhotoGalleryFragment extends android.support.v4.app.Fragment {
         setHasOptionsMenu(true);
         //new FetchItemTask().execute();
         updateItem();
+
+        // Locate the button in activity_main.xml
+        Button button = (Button) getActivity().findViewById(R.id.menu_item_camera);
+
+        // Capture button clicks
+        button.setOnClickListener(new OnClickListener() {
+            public void onClick(View arg0) {
+
+                // Start NewActivity.class
+                Intent myIntent = new Intent(getActivity(),
+                        CameraActivity.class);
+                startActivity(myIntent);
+            }
+        });
 
         Handler responseHandler = new Handler();
         mThumbnailDownloader = new ThumbnailDownloader<>(responseHandler);
